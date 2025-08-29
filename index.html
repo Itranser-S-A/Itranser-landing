@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Itranser — Informática de Transportes y Servicios, S.A.U. Desarrollo de apps móviles multiplataforma con Flutter." />
+  <title>Itranser — Informática de Transportes y Servicios, S.A.U.</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon simple (opcional). Puedes reemplazarlo por un .ico propio -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a2540'/%3E%3Ctext x='50' y='58' font-size='54' text-anchor='middle' fill='%23ffffff' font-family='Arial, Helvetica, sans-serif'%3EI%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Header fijo con navegación -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <!-- Logo / Nombre -->
+      <a class="brand" href="#inicio" aria-label="Itranser — inicio">
+        <span class="brand-mark" aria-hidden="true">I</span>
+        <span class="brand-name">Itranser</span>
+      </a>
+
+      <!-- Hamburguesa sin JS: checkbox hack -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" />
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <!-- Navegación -->
+      <nav class="site-nav" role="navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO / INICIO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <!-- Título principal -->
+          <h1 id="hero-title" class="sr-only">Itranser</h1>
+          <p class="overline">Itranser</p>
+          <!-- Eslogan/subtítulo con el significado del acrónimo -->
+          <h2 class="hero-title">Informática de Transportes y Servicios, S.A.U.</h2>
+          <p class="hero-subtitle">
+            Transformamos tus ideas en aplicaciones móviles innovadoras y de alto rendimiento con <strong>Flutter</strong>.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#proyectos">Ver Proyectos</a>
+            <a class="btn btn-ghost" href="#contacto">Contacta con nosotros</a>
+          </div>
+        </div>
+
+        <!-- Ilustración/placeholder accesible -->
+        <figure class="hero-visual" aria-label="Ilustración abstracta de desarrollo móvil">
+          <div class="device-mockup" aria-hidden="true">
+            <div class="device-notch"></div>
+            <div class="device-screen">
+              <div class="screen-card">
+                <div class="dot"></div>
+                <div class="line w40"></div>
+                <div class="line w70"></div>
+                <div class="pill"></div>
+              </div>
+              <div class="screen-card">
+                <div class="dot"></div>
+                <div class="line w60"></div>
+                <div class="line w55"></div>
+                <div class="pill"></div>
+              </div>
+              <div class="screen-card">
+                <div class="dot"></div>
+                <div class="line w45"></div>
+                <div class="line w80"></div>
+                <div class="pill"></div>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="services-title">Nuestros Servicios</h2>
+          <p class="section-lead">
+            Especialistas en <strong>desarrollo de aplicaciones móviles multiplataforma</strong> con Flutter, desde el concepto inicial hasta el despliegue y mantenimiento.
+          </p>
+        </header>
+
+        <article class="service-card">
+          <div class="service-card__head">
+            <!-- Icono Flutter-like (no oficial) en SVG -->
+            <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M13 2L3 12l3 3L16 5l-3-3zm0 8L8 15l3 3 5-5-3-3zm-3 7l3 3 8-8-3-3-8 8z"/>
+            </svg>
+            <h3>Desarrollo de Aplicaciones Móviles con Flutter</h3>
+          </div>
+          <p class="service-desc">
+            Construimos apps iOS y Android con una sola base de código, maximizando el rendimiento y reduciendo tiempos y costes. Integraciones nativas, arquitectura limpia y UI/UX a medida.
+          </p>
+          <div class="benefits">
+            <!-- Beneficio 1 -->
+            <div class="benefit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="benefit-icon"><path d="M12 2l4 8 8 1-6 6 2 9-8-4-8 4 2-9-6-6 8-1z"/></svg>
+              <h4>Rendimiento Nativo</h4>
+              <p>Animaciones fluidas y tiempos de carga mínimos gracias a la renderización acelerada.</p>
+            </div>
+            <!-- Beneficio 2 -->
+            <div class="benefit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="benefit-icon"><path d="M3 12h18M12 3v18"/></svg>
+              <h4>Desarrollo Ágil</h4>
+              <p>Productividad con <em>hot reload</em> y componentes reutilizables para iterar más rápido.</p>
+            </div>
+            <!-- Beneficio 3 -->
+            <div class="benefit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="benefit-icon"><path d="M4 4h16v16H4zM7 7h10v3H7zM7 12h6v5H7z"/></svg>
+              <h4>Interfaces Expresivas</h4>
+              <p>Diseños modernos, accesibles y coherentes con tu marca en múltiples dispositivos.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="projects-title">Proyectos Destacados</h2>
+          <p class="section-lead">
+            Selección de productos que demuestran nuestra experiencia técnica y de diseño.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Proyecto 1: SITA -->
+          <article class="card project-card">
+            <figure class="card-media" aria-label="Captura del proyecto SITA">
+              <!-- Placeholder responsivo -->
+              <div class="media-placeholder">SITA</div>
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title">SITA</h3>
+              <p class="card-text">
+                Sita es una app móvil para montar gymkanas interactivas con mapas, pistas y retos. Ideal para colegios, turismo, eventos y grupos de amigos.
+              </p>
+              <a class="btn btn-secondary" href="https://sita-74d5a--pr1-feature-update-menu-r6gukyxj.web.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir SITA en nueva pestaña">Ver más</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: ESCAPERUM -->
+          <article class="card project-card">
+            <figure class="card-media" aria-label="Captura del proyecto Escaperum">
+              <div class="media-placeholder">ESCAPERUM</div>
+            </figure>
+            <div class="card-body">
+              <h3 class="card-title">ESCAPERUM</h3>
+              <p class="card-text">
+                Sita es una app móvil para montar gymkanas interactivas con mapas, pistas y retos. Ideal para colegios, turismo, eventos y grupos de amigos.
+              </p>
+              <a class="btn btn-secondary" href="https://escaperum.itranser.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Escaperum en nueva pestaña">Ver más</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACTO / FOOTER -->
+  <footer id="contacto" class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">I</span>
+        <span class="brand-name">Itranser</span>
+      </div>
+      <address class="footer-contact">
+        <a href="mailto:info@itranser.com">info@itranser.com</a>
+      </address>
+      <p class="copyright">© 2025 Itranser. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
